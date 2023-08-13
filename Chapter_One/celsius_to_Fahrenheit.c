@@ -7,8 +7,8 @@
  */
 int main(void)
 {
-	int farh, celsuis;
-	int upper, add;
+	float farh, celsuis;
+	float upper, add;
 
 	farh = 0;
 	upper = 300;
@@ -16,9 +16,9 @@ int main(void)
 
 	while (farh <= upper)
 	{
-		celsuis = 5 * (farh - 32) / 9;
-		printf("%3d\t%10d\n", farh, celsuis);
-		farh += 20;
+		celsuis = 5.0/9.0 * (farh - 32.0);
+		printf("%3.1f\t%5.3f\n", farh, celsuis);
+		farh += 20.0;
 	}
 	return (0);
 }
