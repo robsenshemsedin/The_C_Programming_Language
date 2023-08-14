@@ -14,5 +14,6 @@ int main(void)
 
 	for (farh = MAXVALUE; farh >= LOWER; farh -= DECRIMENT)
 		printf("%3d\t%4.3f\n", farh, 5.0 / 9.0 * (farh - 32));
+	printf("%d\n", EOF);
 	return (0);
 }
